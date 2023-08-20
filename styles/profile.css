@@ -1,0 +1,40 @@
+.backGroundImage {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/webp/background1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 528px;
+}
+
+.title {
+  margin-bottom: 16px;
+  margin-top: 88px;
+  font-size: 1.5rem; /*24px;*/
+  font-weight: bold;
+  color: #190f27;
+}
+
+a {
+  color: #64606a;
+  font-size: 0.875rem;
+}
+
+.logout {
+  border-bottom: 3px solid #284642;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #64606a;
+}

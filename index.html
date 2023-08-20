@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tutorial devstock" />
+    <meta name="keywords" content="projekt, html, tutorial, devstock" />
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" type="image/webp" href="./images/webp/favicon.ico" sizes="32x32" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="register">
+          <!-- Notification container -->
+          <div id="notification-container"></div>
+          <p>Zarejestruj się</p>
+          <button class="tooltip">
+            <img src="./images/webp/fb.webp" alt="Facebook logo" />rejestracja przez Facebook
+          </button>
+          <button class="tooltip">
+            <img src="./images/webp/insta.webp" alt="Instagram logo" />rejestracja przez Instagram
+          </button>
+          <div class="lineWrapper first">
+            <div class="line"></div>
+            <p>Lub za pomocą maila</p>
+          </div>
+          <form id="form">
+            <!-- Imie i nazwisko -->
+            <div class="formName">
+              <div class="textInput">
+                <label class="formLabel" for="">First Name</label>
+                <input id="firstName" type="text" placeholder="First Name" />
+                <div id="firstNameError" class="validationError">
+                  Imię musi mieć 2-20 liter, pierwsza powinna być wielka
+                </div>
+              </div>
+              <div class="textInput">
+                <label class="formLabel" for="">Last Name</label>
+                <input id="lastName" type="text" placeholder="Last Name" />
+                <div id="lastNameError" class="validationError">
+                  Nazwisko musi mieć 2-30 liter, pierwsza powinna być wielka
+                </div>
+              </div>
+            </div>
+            <!-- E-mail -->
+            <div class="textInput">
+              <label class="formLabel" for="">E-mail</label>
+              <input id="email" type="text" placeholder="E-mail" />
+              <div id="emailError" class="validationError">To nie jest poprawny format adresu e-mail</div>
+            </div>
+            <!-- Password -->
+            <div class="textInput">
+              <label class="formLabel" for="">Password</label>
+              <input id="password" type="password" placeholder="Password" />
+              <div id="passwordError" class="validationError">
+                Hasło musi mieć co najmniej 8 znaków, małą i wielką literę, cyfrę i znak specjalny
+              </div>
+            </div>
+            <!-- Terms & submit -->
+            <div class="bottomWrapper">
+              <div class="checkboxInput">
+                <input type="checkbox" id="terms" class="terms" />
+                <label for="terms">I have read the <a href="#">Terms & Conditions</a></label>
+              </div>
+              <div id="termsError" class="validationError">Musisz zaakceptować warunki serwisu</div>
+              <button class="submit" type="submit">Zarejestruj się za darmo</button>
+            </div>
+          </form>
+          <div class="lineWrapper second">
+            <div class="line"></div>
+          </div>
+          <!-- Przejdź do loginu -->
+          <div class="login">Masz już konto? <a href="login.html">Zaloguj się</a></div>
+        </div>
+      </div>
+      <div class="right">
+        <!-- Right side -->
+        <div class="backGroundImage"></div>
+        <div class="logo">
+          <img src="./images/webp/paper.webp" alt="Shop logo and in the middle text PAPER.shop" />
+        </div>
+      </div>
+    </main>
+    <div id="popup" class="popup">
+      <span class="loader"></span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

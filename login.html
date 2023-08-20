@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tutorial devstock" />
+    <meta name="keywords" content="projekt, html, tutorial, devstock" />
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="icon" type="image/webp" href="./images/webp/favicon.ico" sizes="32x32" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="login">
+          <!-- Notification container -->
+          <div id="notification-container"></div>
+          <p>Zaloguj się</p>
+          <button class="tooltip">
+            <img src="./images/webp/fb.webp" alt="Facebook logo" />logowanie przez Facebook
+          </button>
+          <button class="tooltip">
+            <img src="./images/webp/insta.webp" alt="Instagram logo" />logowanie przez Instagram
+          </button>
+          <div class="lineWrapper first">
+            <div class="line"></div>
+            <p>Lub za pomocą maila</p>
+          </div>
+          <form id="form">
+            <!-- E-mail -->
+            <div class="textInput">
+              <label class="formLabel" for="">E-mail</label>
+              <input id="email" type="text" placeholder="E-mail" />
+              <div id="emailError" class="validationError">To nie jest poprawny format adresu e-mail</div>
+            </div>
+            <!-- Password -->
+            <div class="textInput">
+              <label class="formLabel" for="">Password</label>
+              <input id="password" type="password" placeholder="Password" />
+              <div id="passwordError" class="validationError">
+                Hasło musi mieć co najmniej 8 znaków, małą i wielką literę, cyfrę i znak specjalny
+              </div>
+            </div>
+            <div class="bottomWrapper">
+              <div class="checkboxInput">
+                <input type="checkbox" id="rememberCheckbox" name="rememberCheckbox" />
+                <label for="rememberCheckbox">Zapamiętaj mnie</label>
+                <a href="password-recovery.html">Zapomniałem hasła</a>
+              </div>
+            </div>
+            <button type="submit" class="submit">Zaloguj się</button>
+          </form>
+          <div class="lineWrapper second">
+            <div class="line"></div>
+          </div>
+          <!-- Przejdź do loginu -->
+          <div class="rejestracja">Nie masz jeszcze konta? <a href="index.html">Zarejestruj się</a></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="backGroundImage"></div>
+        <div class="logo">
+          <img src="./images/webp/paper.webp" alt="Shop logo and in the middle text PAPER.shop" />
+        </div>
+      </div>
+    </main>
+    <div id="popup" class="popup">
+      <span class="loader"></span>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
